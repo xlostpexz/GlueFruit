@@ -921,36 +921,66 @@ local Home = DinoPage:NewSection("----- Auto Farm Dark Fruit Only -----")
        _G.NoClip = value
        _G.NKF = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     Home:CreateToggle("Auto Bandit",function(value)
        _G.NoClip = value
        _G.BD = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     Home:CreateToggle("Auto The Senator[Noob]",function(value)
        _G.NoClip = value
        _G.TSN = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     Home:CreateToggle("Auto Cyb",function(value)
        _G.NoClip = value
        _G.Cyb = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     Home:CreateToggle("Auto Monkey",function(value)
        _G.NoClip = value
        _G.MOK = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     Home:CreateToggle("Auto The Gold",function(value)
        _G.NoClip = value
        _G.TG = value
        _G.Dark = value
+       while _G.Dark do wait(0.3)
+
+    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
+
+end
     end)
     
     spawn(function()
@@ -1006,16 +1036,6 @@ end)
 spawn(function()
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
-            if _G.Cyb then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").NPC["Cyb"].HumanoidRootPart.CFrame * CFrame.new(0,8,0)
-            end
-        end)
-       end)
-end)
-    
-spawn(function()
-       game:GetService("RunService").RenderStepped:Connect(function()
-        pcall(function()
             if _G.TG then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").NPC["The Gold"].HumanoidRootPart.CFrame * CFrame.new(0,8,0)
             end
@@ -1031,14 +1051,5 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Wo
             end
         end)
        end)
-        end)
-        
-        spawn(function()
-       game:GetService("RunService").RenderStepped:Connect(function()
-        pcall(function()
-            if _G.Dark then
-    game.Players.LocalPlayer.Backpack.Dark.Fire.Fire:FireServer()
-            end
-        end)
-       end)
-        end)
+end)
+    
